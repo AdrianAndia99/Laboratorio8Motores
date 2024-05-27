@@ -94,6 +94,11 @@ public class Movimiento : MonoBehaviour
         {
             SceneManager.LoadScene("Parte2");
         }
+
+        if(collision.gameObject.tag == "cambio2")
+        {
+            SceneManager.LoadScene("Line");
+        }
     }
 
     private void OnCollisionExit(Collision collision)
